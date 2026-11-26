@@ -103,54 +103,7 @@ button.primary{width:100%;background:#22c55e;color:#062a12;border:0;padding:13px
 <button class="primary" onclick="showPest('white')" style="margin-top:8px">White powder</button>
 <div id="pestResult" style="margin-top:12px"></div>
 </div>
-<div class="card">
-<h3>📊 Add Daily Record</h3>
-<label>Type</label>
-<select id="recType">
-<option value="cost">Cost</option>
-<option value="harvest">Harvest - Kg</option>
-<option value="sale">Sale</option>
-<option value="loss">Loss</option>
-</select>
-<label>Item</label>
-<input id="recItem" placeholder="e.g. NPK Fertilizer">
-<label>Amount (UGX) OR Kg</label>
-<input id="recAmount" type="number" placeholder="e.g. 15000">
-<button class="primary" onclick="addRecord()">Add Record</button>
-<div id="recordList" style="margin-top:12px"></div>
-<div id="totals" style="margin-top:12px;font-weight:bold"></div>
-</div>
-
-<div class="card">
-<h3>🧪 Fertilizer Calculator</h3>
-<label>Crop</label>
-<select id="fertCrop">
-<option>Tomato</option>
-<option>Cabbage</option>
-<option>Onion</option>
-<option>Maize</option>
-<option>Beans</option>
-</select>
-<label>Acres</label>
-<input id="fertAcres" type="number" step="0.01" value="0.25">
-<label>Did you apply manure?</label>
-<select id="manure">
-<option value="yes">Yes - manure applied</option>
-<option value="no">No - No manure</option>
-</select>
-<button class="primary" onclick="calcFert()">Calculate</button>
-<div id="fertResult" style="margin-top:12px"></div>
-</div>
-
-<div class="card">
-<h3>🐛 Pest & Disease</h3>
-<p>Tap what you see on your leaf.</p>
-<button class="primary" onclick="showPest('blight')">Yellow spots + Black edges</button>
-<button class="primary" onclick="showPest('wilt')" style="margin-top:8px">Wilting</button>
-<button class="primary" onclick="showPest('worm')" style="margin-top:8px">Holes / Worms</button>
-<button class="primary" onclick="showPest('white')" style="margin-top:8px">White powder</button>
-<div id="pestResult" style="margin-top:12px"></div>
-</div>
+ 
   <div class="card" id="soil">
 <h3>🌱 Soil pH Test Guide</h3>
 <p>Test BEFORE you buy fertilizer. If pH is wrong, fertilizer is wasted.</p>
